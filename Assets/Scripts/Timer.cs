@@ -108,6 +108,11 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void CheatTime()
+    {
+        timeRemaining = 9000;
+    }
+
     public void AddTime()
     {
         audio.clip = cranking;

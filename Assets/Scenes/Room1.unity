@@ -2700,7 +2700,7 @@ MonoBehaviour:
   VaultDoors: {fileID: 68277362}
   VaultDoorsPos: {fileID: 591173573}
   audio: {fileID: 68277368}
-  UnlockedDoor: {fileID: 0}
+  UnlockedDoor: {fileID: 8300000, guid: 75f913ba7713a5c42addfaf33e8786da, type: 3}
   KeyType: 1
 --- !u!23 &68277366
 MeshRenderer:
@@ -12712,7 +12712,7 @@ MonoBehaviour:
   VaultDoors: {fileID: 294496655}
   VaultDoorsPos: {fileID: 981566822}
   audio: {fileID: 294496665}
-  UnlockedDoor: {fileID: 0}
+  UnlockedDoor: {fileID: 8300000, guid: 75f913ba7713a5c42addfaf33e8786da, type: 3}
   KeyType: 0
 --- !u!65 &294496664
 BoxCollider:
@@ -22473,7 +22473,7 @@ MonoBehaviour:
   LockedDoor: {fileID: 494330802}
   openPos: {fileID: 1343393883}
   audio: {fileID: 494330808}
-  UnlockDoor: {fileID: 0}
+  UnlockDoor: {fileID: 8300000, guid: ab36f494baef9ac46b099ca826437c6a, type: 3}
 --- !u!65 &494330805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22828,7 +22828,7 @@ MonoBehaviour:
   VaultDoors: {fileID: 502093787}
   VaultDoorsPos: {fileID: 960203278}
   audio: {fileID: 68277368}
-  UnlockedDoor: {fileID: 0}
+  UnlockedDoor: {fileID: 8300000, guid: 75f913ba7713a5c42addfaf33e8786da, type: 3}
   KeyType: 2
 --- !u!23 &502093791
 MeshRenderer:
@@ -41735,6 +41735,34 @@ PrefabInstance:
       propertyPath: Threeplayer.height
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2008368589}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheatTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Timer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1135656188327817324, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -49401,6 +49429,34 @@ PrefabInstance:
     - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: fourPlayer.height
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2008368589}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheatTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Timer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1135656188327817324, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: m_IsActive
@@ -58240,7 +58296,7 @@ MonoBehaviour:
   LockedDoor: {fileID: 1211335009}
   openPos: {fileID: 2003537442}
   audio: {fileID: 494330808}
-  UnlockDoor: {fileID: 0}
+  UnlockDoor: {fileID: 8300000, guid: ab36f494baef9ac46b099ca826437c6a, type: 3}
 --- !u!65 &1211335012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71242,6 +71298,34 @@ PrefabInstance:
       propertyPath: fourPlayer.height
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2008368589}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheatTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Timer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1135656188327817324, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -72602,7 +72686,7 @@ MonoBehaviour:
   VaultDoors: {fileID: 1532734125}
   VaultDoorsPos: {fileID: 778759752}
   audio: {fileID: 68277368}
-  UnlockedDoor: {fileID: 0}
+  UnlockedDoor: {fileID: 8300000, guid: 75f913ba7713a5c42addfaf33e8786da, type: 3}
   KeyType: 3
 --- !u!23 &1532734129
 MeshRenderer:
@@ -73562,7 +73646,7 @@ MonoBehaviour:
   LockedDoor: {fileID: 1545883596}
   openPos: {fileID: 249548102}
   audio: {fileID: 494330808}
-  UnlockDoor: {fileID: 0}
+  UnlockDoor: {fileID: 8300000, guid: ab36f494baef9ac46b099ca826437c6a, type: 3}
 --- !u!65 &1545883599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89753,7 +89837,7 @@ MonoBehaviour:
   LockedDoor: {fileID: 1853333643}
   openPos: {fileID: 1434567391}
   audio: {fileID: 494330808}
-  UnlockDoor: {fileID: 0}
+  UnlockDoor: {fileID: 8300000, guid: ab36f494baef9ac46b099ca826437c6a, type: 3}
 --- !u!65 &1853333646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -105231,6 +105315,34 @@ PrefabInstance:
     - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: 'HasKey.Array.data[0]'
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2008368589}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheatTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Timer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 981441369279537447, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
+      propertyPath: CheatTime.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1135656188327817324, guid: 00fc30f0eaf4365459e4ba50fa6dbaa5, type: 3}
       propertyPath: m_IsActive

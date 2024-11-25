@@ -41,4 +41,8 @@ public class playerHandler : MonoBehaviour
     {
         player.OnShoot();
     }
+    public void Cheat()
+    {
+        player.ActivateCheat();
+    }
 }

@@ -4,6 +4,7 @@ using System.Net.NetworkInformation;
 using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
@@ -28,7 +29,8 @@ public class Player : MonoBehaviour
     [Header("Player Index")]
     [SerializeField]
     private int playerindex = 0;
-
+    [SerializeField]
+    private UnityEvent CheatTime;
 
 
     public Rect Twoplayer;
@@ -112,10 +114,12 @@ public class Player : MonoBehaviour
 
     }
 
-    public void OnPlaceMarker()
+    public void ActivateCheat()
     {
-
-            Instantiate(MarkerObj, spawnPt.transform.position, Quaternion.identity);
+        Gear = 999;
+        playerAmmo = 999;
+        playerHealth = 999;
+        CheatTime.Invoke();
     }
     public void OnNoButton()
     {

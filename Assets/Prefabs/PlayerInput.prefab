@@ -157,6 +157,22 @@ MonoBehaviour:
     m_ActionId: f7b7f353-e289-42a8-a4fa-d8aa219adb96
     m_ActionName: 'UI/MoveUI[/XInputControllerWindows/dpad,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Core
       (Plus) Wired Controller/hat]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: Cheat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 13c9fbe5-e690-42d5-908f-e4037af88b34
+    m_ActionName: 'Gameplay/DevCheat[/XInputControllerWindows/buttonEast,/XInputControllerWindows/leftShoulder,/XInputControllerWindows/rightShoulder]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Controller
   m_DefaultActionMap: Gameplay

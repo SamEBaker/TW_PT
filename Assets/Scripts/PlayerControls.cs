@@ -89,6 +89,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""DevCheat"",
+                    ""type"": ""Button"",
+                    ""id"": ""13c9fbe5-e690-42d5-908f-e4037af88b34"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -432,6 +441,50 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Rotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""3132fdb5-f3e0-4786-a2a0-8ac243a9420c"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DevCheat"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""d257e1ef-c188-4a31-84b7-b8657f72353a"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller;JoyStick"",
+                    ""action"": ""DevCheat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""5c082897-f836-4854-8114-02a9ce9c18fe"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller;JoyStick"",
+                    ""action"": ""DevCheat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""7833639f-4072-4501-b5b7-4342e921309e"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller;JoyStick"",
+                    ""action"": ""DevCheat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -633,6 +686,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay_Shoot = m_Gameplay.FindAction("Shoot", throwIfNotFound: true);
         m_Gameplay_JoinGame = m_Gameplay.FindAction("JoinGame", throwIfNotFound: true);
         m_Gameplay_Rotation = m_Gameplay.FindAction("Rotation", throwIfNotFound: true);
+        m_Gameplay_DevCheat = m_Gameplay.FindAction("DevCheat", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
@@ -711,6 +765,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Shoot;
     private readonly InputAction m_Gameplay_JoinGame;
     private readonly InputAction m_Gameplay_Rotation;
+    private readonly InputAction m_Gameplay_DevCheat;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -722,6 +777,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @Shoot => m_Wrapper.m_Gameplay_Shoot;
         public InputAction @JoinGame => m_Wrapper.m_Gameplay_JoinGame;
         public InputAction @Rotation => m_Wrapper.m_Gameplay_Rotation;
+        public InputAction @DevCheat => m_Wrapper.m_Gameplay_DevCheat;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -752,6 +808,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Rotation.started += instance.OnRotation;
             @Rotation.performed += instance.OnRotation;
             @Rotation.canceled += instance.OnRotation;
+            @DevCheat.started += instance.OnDevCheat;
+            @DevCheat.performed += instance.OnDevCheat;
+            @DevCheat.canceled += instance.OnDevCheat;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -777,6 +836,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Rotation.started -= instance.OnRotation;
             @Rotation.performed -= instance.OnRotation;
             @Rotation.canceled -= instance.OnRotation;
+            @DevCheat.started -= instance.OnDevCheat;
+            @DevCheat.performed -= instance.OnDevCheat;
+            @DevCheat.canceled -= instance.OnDevCheat;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -884,6 +946,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnJoinGame(InputAction.CallbackContext context);
         void OnRotation(InputAction.CallbackContext context);
+        void OnDevCheat(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
