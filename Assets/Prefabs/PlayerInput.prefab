@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3228972035027697951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5909167304633347676}
+  - component: {fileID: 3422152413378999924}
+  - component: {fileID: 5210264257142842343}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5909167304633347676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228972035027697951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.117813, y: 16.678017, z: 87.393234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3422152413378999924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228972035027697951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 11d5a98877a7301489905c731bbd5fb5, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: OnDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d44334e3-7f66-4e6a-be59-9d1c7ee49dcd
+    m_ActionName: 'Gameplay/Drop[/XInputControllerWindows/buttonNorth,/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 550aa6ba-89dd-42c7-b1f2-b55d5960bd8e
+    m_ActionName: 'Gameplay/Move[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6f0566c5-1b09-4207-9747-d6819ac65e36
+    m_ActionName: 'Gameplay/PickUp[/XInputControllerWindows/buttonWest,/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: Sprint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d30fcf69-85b4-421d-992e-51fe3bc06136
+    m_ActionName: 'Gameplay/Sprint[/XInputControllerWindows/leftTrigger,/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 331da78c-9023-4237-86b3-1c099f141804
+    m_ActionName: 'Gameplay/Shoot[/XInputControllerWindows/rightTrigger,/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 73b80646-dcb0-4470-98ad-4cecd824ff88
+    m_ActionName: 'Gameplay/JoinGame[/Keyboard/anyKey,/XInputControllerWindows/start]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5210264257142842343}
+        m_TargetAssemblyTypeName: playerHandler, Assembly-CSharp
+        m_MethodName: Rotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1a451c17-a5f2-4be4-b608-a1258c72d800
+    m_ActionName: 'Gameplay/Rotation[/XInputControllerWindows/rightStick,/Core (Plus)
+      Wired Controller/stick,/Mouse/position]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 98d82a8f-6d1d-4089-941e-049afb9473a2
+    m_ActionName: 'UI/Select[/Keyboard/v,/XInputControllerWindows/buttonSouth,/Core
+      (Plus) Wired Controller/button2]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f7b7f353-e289-42a8-a4fa-d8aa219adb96
+    m_ActionName: 'UI/MoveUI[/XInputControllerWindows/dpad,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Core
+      (Plus) Wired Controller/hat]'
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Controller
+  m_DefaultActionMap: Gameplay
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &5210264257142842343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228972035027697951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ca487b94ab6664ab6e8d7bdc9cbd1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
